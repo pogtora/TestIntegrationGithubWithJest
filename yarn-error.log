@@ -1,0 +1,58 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add --dev @types/ts-jest
+
+PATH: 
+  C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Users\Andriel\AppData\Local\Microsoft\WindowsApps;C:\Users\Andriel\Documents\flutter\bin;D:\Programas\SDK_Android_studio\tools;D:\Programas\SDK_Android_studio\platform-tools;;D:\Programas\Microsoft VS Code\bin;C:\Users\Andriel\AppData\Roaming\npm;C:\Users\Andriel\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.17.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fts-jest: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
+      at Request.emit (events.js:375:28)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
+      at Request.emit (events.js:375:28)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
+      at Object.onceWrapper (events.js:481:28)
+      at IncomingMessage.emit (events.js:387:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "testes-integracao",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "@types/express": "^4.17.13",
+      "axios": "^0.21.1",
+      "express": "^4.17.1",
+      "supertest": "^6.1.3",
+      "ts-node-dev": "^1.1.8",
+      "typescript": "^4.3.5"
+    },
+    "scripts": {
+      "start": "ts-node-dev --respawn --transpile-only ./src/server.ts",
+      "test": "jest"
+    },
+    "devDependencies": {
+      "@types/jest": "^26.0.24",
+      "jest": "^27.0.6",
+      "ts-jest": "^27.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
